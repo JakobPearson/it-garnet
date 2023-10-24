@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>My first HTML Document</title>
+  <!-- The Head section contains metadata & linked resources -->
+  <meta Charset="utf-8" />
+  <meta name="description" content="This is the elevator pitch for your site" />
+  <meta name="author" content="Jakob Pearson" />
+  <meta name="keywords" content="UALR, UA Little Rock, IT Minor" />
+</head>
+
+<body class="text">
+  <!-- The Displayed Content -->
+  <h1>HTML5 Reference Document</h1>
+  <section id="forms">
+    <h2 class="section-heading">Forms</h2>
+    <form action="processing-script.php" method="get">
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <label for="full-name">Full Name:</label><input type="text" id="full-name" name="full-name" />
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <label for="cmf">Favorite Car Manufacturer</label>
+        <select id="cmf" name="cmf">
+          <option value="null"> --- </option>
+          <option value="f">Ford</option>
+          <option value="d">Dodge</option>
+          <option value="h">Honda</option>
+          <option value="b">Bentley</option>
+          <option selected> --- </option>
+        </select>
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </section>
+  <section id="headings">
+    <h2 class="section-heading">Heading</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </section>
+  <section id="text-based-semantics">
+    <h2 class="section-heading">Text Based Semantics</h2>
+    <p>Lorem ipsum<em> dolor sit amet</em> consectetur, adipisicing elit. <strong>Laudantium exercitationem nobis</strong> tenetur tempore dolorum eos commodi doloremque, eum,<del> autem dicta</del>facere temporibus doloribus error corporis voluptatibus<sub>vitae beatae</sub>maxime dolor.<sup>superscript</sub></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ipsum vero nulla dignissimos commodi quae fugiat dicta eos maiores earum,
+      <hr /> dolor qui alias adipisci, eligendi atque dolores nobis molestiae aperiam.
+    </p>
+    <address>
+      Jakob Pearson<br />
+      321 Nowhere st.<br />
+      Little Rock, AR, 78221
+    </address>
+  </section>
+  <section id="table">
+    <h2 class="section-heading">Table</h2>
+    <!-- Remove Border Attribute before publishing -->
+    <table border="1">
+      <caption>Grocery List</caption>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Cost</th>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+      <tr>
+        <td>Soda</td>
+        <td>12</td>
+        <td>.50</td>
+      </tr>
+    </table>
+  </section>
+  <section id="lists">
+    <h2 class="section-heading">Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+    <h3>Definition List</h3>
+    <dl>
+      <dt>Definition Term</dt>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dt>Definition Term</dt>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+      <dd>Definition Description</dd>
+    </dl>
+    <h3>Nested List</h3>
+    <ol start="5">
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item
+        <ul>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
+      </li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+
+  </section>
+  <section id="hyperlinks">
+    <h2 class="section-heading">Hyperlinks</h2>
+    <ul>
+      <li><a href="https://ualr.edu#news" target="_blank">Absolute Link</a></li>
+      <li><a href="folder/folder/file.html" title="Relative Link Example">Relative Link</a></li>
+      <li><a href="#headings">Anchor Link</a></li>
+      <li><a href="mailto:email@address.com">Email Link</a></li>
+    </ul>
+  </section>
+  <section id="quotes">
+    <h2 class="section-heading">Quotes</h2>
+    <h3>Blockquote</h3>
+    <blockquote>If you can't explain it simply, you don't understand it well enough.<cite>Albert Einsein</cite>
+    </blockquote>
+    <h3>Inline Quote</h3>
+    <p><q>Honey tastes good!</q> said Pooh.</p>
+  </section>
+  <h2 class="section-heading">Images</h2>
+     <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo"/>
+    </section>
+    <section id="structural-elements">
+        <h2> class="section-heading"> Structural Elements</h2>
+
+    </section>
+</body>
+
+</html>
