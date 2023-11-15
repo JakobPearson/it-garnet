@@ -1,0 +1,168 @@
+/* Color Theme Swatches in Hex 
+#8C0F1A
+#F2E63D
+#D99F6C
+#F2561D
+#400101
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ---------------Utility Classes----------------- */
+
+.container {
+  margin: auto;
+  padding: 40px;
+}
+
+/* ---------------Global Styles----------------- */
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #400101;
+}
+
+main {
+  background-color: #ffffff;
+  width: 80vw;
+  /* Long form */
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  /* 4 Value Shorthand T,R,B,L*/
+  margin: 40px auto 40px auto;
+  /* 2 Value Shorthand T/B, L/R*/
+  margin: 40px auto;
+  border: 2px solid #0abfbf;
+  border-radius: 4px;
+}
+
+header.primary {
+  background-color: #8fbdd9;
+  background-image: url("https://assets.codepen.io/7248/bg_1.png");
+  /* Local Path
+      background-image: url("../img/bg_1.png")
+    */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 3px solid #104d73;
+}
+
+header.primary .hgroup {
+  width: 70%;
+}
+
+.hgroup h1,
+.hgroup h2 {
+  margin: 0;
+}
+
+header.primary .hgroup h1 a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px #000000;
+  font-size: 2.6rem;
+}
+
+header.primary .hgroup h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  font-size: 1.8em;
+  line-height: 1.1;
+}
+
+header.primary nav {
+  width: 30%;
+  margin: 0;
+}
+
+header.primary nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+header.primary nav ul li {
+  margin-bottom: 10px;
+}
+
+header.primary nav a {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  padding: 10px;
+  border-radius: 20px 0;
+  border: 1px solid #8c0f1a;
+  border-right: 10px solid #8c0f1a;
+  text-align: right;
+}
+
+#content h2,
+#content h3 {
+  color: #400101;
+  border-left: 7.5px solid #8c0f1a;
+  border-radius: 15px 0;
+  padding: 7.5px;
+}
+
+#blog {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(4deg, #263bdb 0%, rgb(61, 80, 91) 100%);
+  padding: 20px 0;
+  border-top: 6px double #f2561d;
+  border-bottom: 6px double #f2561d;
+}
+
+#blog > h2 {
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  font-size: 2.2rem;
+  margin-left: 20px;
+}
+
+article.post {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "figure header"
+    "figure post-content"
+    "figure footer";
+  grid-gap: 20px;
+}
+
+article.post figure {
+  grid-area: figure;
+  margin: 0;
+}
+article.post header {
+  grid-area: header;
+}
+article.post .post-content {
+  grid-area: post-content;
+}
+article.post .post-meta {
+  grid-area: footer;
+}
+
+aside .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
