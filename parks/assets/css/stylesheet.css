@@ -6,43 +6,50 @@
 /*#736834*/
 
 html{
-    background-image: url(/parks/assets/img/pinnacle.jpg); 
+    background-image: url(/parks/assets/img/trees.jpg); 
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 
-header h1{
+header.primary{
     background-image: url(/parks/assets/img/pinnacle\ banner-01.png);
     background-size: cover;
     font-size: 50px;
     text-align: center;
+    color: #007F60;
     padding-top: 50px;
-    padding-bottom: 125px;
+    padding-bottom: 95px;
     margin-top: 0px;
 
 }
 
-       
+header h1{
+background-color: aliceblue;
+border-radius: 10px;
+margin-right: 100px;
+margin-left: 100px;
+opacity: 0.8;
 
-nav.navigation{
-    text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1em;
-   
-  
+}
+     
 
+nav li{
+    position: relative;
+    display: inline;
+    padding: 100px 15px;
 }
 
 nav a{
-  border-radius: 25px;
-  background: #73AD21;
-  padding: 20px;
-  width: 80px;
-  height: 10px;
-}
-
-}
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 80px;
+    height: 10px;
+  }
 
 figure.image-1{
  
@@ -60,14 +67,23 @@ figure.image-3{
 
 
 div.images{
+padding-top: 60px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr auto;
 clear: both;
 padding-left: 80px;
 }
 
+div#content{
+    font-size: 35px;
+    text-align: center;
+padding-top: 15px;
+padding-left: 25px;
+padding-right: 25px;
+}
+
 main {
-    background-color: white;
+    background-color:#FDFBEE ;
     width: 80vw;
     margin-top: 40px;
     margin-right: auto;
@@ -81,9 +97,14 @@ main {
 aside#additional{
 text-align: center;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer{
+footer#colophon{
+    font-size: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    background-color: #007F60;
     padding-left: 25px;
 }
