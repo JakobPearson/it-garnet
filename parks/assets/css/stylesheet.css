@@ -1,0 +1,89 @@
+
+/*#3079D9*/
+/*#49A3F2*/
+/*#6BBEF2*/
+/*#8DD5F2*/
+/*#736834*/
+
+html{
+    background-image: url(/parks/assets/img/pinnacle.jpg); 
+    background-size: cover;
+}
+
+
+header h1{
+    background-image: url(/parks/assets/img/pinnacle\ banner-01.png);
+    background-size: cover;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    margin-top: 0px;
+
+}
+
+       
+
+nav.navigation{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+   
+  
+
+}
+
+nav a{
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 80px;
+  height: 10px;
+}
+
+}
+
+figure.image-1{
+ 
+}
+
+
+figure.image-2{
+  
+}
+
+
+figure.image-3{
+
+}
+
+
+div.images{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr auto;
+clear: both;
+padding-left: 80px;
+}
+
+main {
+    background-color: white;
+    width: 80vw;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin: 40px auto 40px auto;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+aside#additional{
+text-align: center;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+footer{
+    padding-left: 25px;
+}
