@@ -52,7 +52,9 @@ nav a{
   }
 
 figure.image-1{
- 
+    border: 3px solid red;
+    background: url(/parks/assets/img/pinnacle.jpg);
+    background-size: 100%;
 }
 
 
@@ -75,11 +77,14 @@ padding-left: 80px;
 }
 
 div#content{
+    display: grid;
+    grid-template-columns: auto;
     font-size: 35px;
     text-align: center;
 padding-top: 15px;
-padding-left: 25px;
-padding-right: 25px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 100px ;
 }
 
 main {
@@ -107,4 +112,11 @@ footer#colophon{
     margin-top: 1px;
     background-color: #007F60;
     padding-left: 25px;
+}
+
+div#wufoo-m1nz3qu80h3omp3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
