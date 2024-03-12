@@ -5,8 +5,10 @@
 /*#8DD5F2*/
 /*#736834*/
 
+/*Home Page*/
+
 html{
-    background-image: url(/parks/assets/img/trees.jpg); 
+    background-image: url(/parks/assets/img/aaker-_LvWJqlORuQ-unsplash\ \(1\).webp); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -16,7 +18,7 @@ html{
 header.primary{
     background-image: url(/parks/assets/img/pinnacle\ banner-01.png);
     background-size: cover;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     color: #007F60;
     padding-top: 50px;
@@ -52,9 +54,7 @@ nav a{
   }
 
 figure.image-1{
-    border: 3px solid red;
-    background: url(/parks/assets/img/pinnacle.jpg);
-    background-size: 100%;
+   
 }
 
 
@@ -120,3 +120,65 @@ div#wufoo-m1nz3qu80h3omp3{
     padding-left: 100px;
     padding-right: 100px;
 }
+
+/*Trails*/
+
+img{
+    max-width:100%;
+}
+
+.container{
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+
+
+
+/*About*/
+
+@media (max-width: 575.98px) {
+ 
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  }
+  
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+
+  }
+  
+
+  @media (min-width: 1200px) {
+
+  }
