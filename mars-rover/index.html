@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mars Rover Photos</title>
+<link rel="stylesheet" href="/mars-rover/assets/css/stylesheet.css">
+</head>
+<body>
+<h2>Mars Rover Photos</h2>
+<form id="roverForm">
+  <input type="radio" name="rover" value="curiosity" onchange="updatePhotoDate(this.value)"> Curiosity
+  <input type="radio" name="rover" value="opportunity" onchange="updatePhotoDate(this.value)"> Opportunity
+  <input type="radio" name="rover" value="spirit" onchange="updatePhotoDate(this.value)"> Spirit
+</form>
+<div id="error"></div>
+<label for="datePicker">Select a date:</label>
+<input type="date" id="datePicker">
+<button onclick="getPhotos()">Get Photos</button>
+<button onclick="clearErrors()">Clear</button>
+<div id="photos"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
