@@ -1,25 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mars Rover Photos</title>
-<link rel="stylesheet" href="/mars-rover/assets/css/stylesheet.css">
-</head>
-<body>
-<h2>Mars Rover Photos</h2>
-<form id="roverForm">
-  <input type="radio" name="rover" value="curiosity" onchange="updatePhotoDate(this.value)"> Curiosity
-  <input type="radio" name="rover" value="opportunity" onchange="updatePhotoDate(this.value)"> Opportunity
-  <input type="radio" name="rover" value="spirit" onchange="updatePhotoDate(this.value)"> Spirit
-</form>
-<div id="error"></div>
-<label for="datePicker">Select a date:</label>
-<input type="date" id="datePicker">
-<button onclick="getPhotos()">Get Photos</button>
-<button onclick="clearErrors()">Clear</button>
-<div id="photos"></div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Mars Rover" />
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery" />
+    <meta name="author" content="Jakob Pearson" />
+    <title>Mars Rover | Jakob Pearson</title>
+    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+       
+  <section id="content">
+    <h1>Mars Rover Photo Explorer</h1>
+    <table>
+      <tr>
+        <th>Rover</th>
+        <th>Mission Start</th>
+        <th>Mission End</th>
+      </tr>
+
+      <tr>
+        <td>Curiosity</td>
+        <td>08/06/2012</td>
+        <td>09/28/2019</td>
+      </tr>
+      <tr>
+        <td>Opportunity</td>
+        <td>01/26/2004</td>
+        <td>06/11/2018</td>
+      </tr>
+      <tr>
+        <td>Spirit</td>
+        <td>01/05/2004</td>
+        <td>03/21/2004</td>
+      </tr>
+    </table>
+
+    <form id="myform" onsubmit="return false">
+      <h2>Select a rover and a picture date:</h2>
+      <label class="formlabel" id="rover">Rover: </label>
+      <label for="Curiosity">
+        <input
+          type="radio"
+          class="radioSelect"
+          id="Curiosity"
+          name="rover"
+          value="Curiosity"
+          data-rule-required="true"
+          data-msg-required="A Rover is Required"
+          onchange="defaultDate()"
+        />Curiosity
+      </label>
+
+      <label for="Opportunity">
+        <input
+          type="radio"
+          class="radioSelect"
+          id="Opportunity"
+          name="rover"
+          value="Opportunity"
+          data-rule-required="true"
+          data-msg-required="A Rover is Required"
+          onchange="defaultDate()"
+        />Opportunity
+      </label>
+
+      <label for="Spirit">
+        <input
+          type="radio"
+          class="radioSelect"
+          id="Spirit"
+          name="rover"
+          value="Spirit"
+          data-rule-required="true"
+          data-msg-required="A Rover is Required"
+          onchange="defaultDate()"
+        />Spirit
+      </label>
+
+      <label class="error" id="roverError" for="rover"></label>
+      <br />
+
+      <label for="date" class="formlabel">Picture Date: </label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        data-rule-required="true"
+        data-msg-required="Date is Required"
+        data-rule-date="true"
+        data-msg-date="Date must be mm/dd/yyyy format"
+      />
+      <label class="error" id="dateError" for="date"></label>
+      <br /><br />
+
+      <input
+        type="button"
+        value="Search"
+        id="Search"
+        name="Search"
+        onclick="GetResults();"
+      />
+
+      <input
+        type="button"
+        value="Clear"
+        id="Clear"
+        name="Clear"
+        onclick="ClearForm();"
+      />
+
+      <br />
+
+      <hr />
+      <a id="anchor0" target="_blank"><img id="image0" /></a>
+      <a id="anchor1" target="_blank"><img id="image1" /></a>
+      <a id="anchor2" target="_blank"><img id="image2" /></a>
+      <a id="anchor3" target="_blank"><img id="image3" /></a>
+      <a id="anchor4" target="_blank"><img id="image4" /></a>
+      <br />
+      <a id="anchor5" target="_blank"><img id="image5" /></a>
+      <a id="anchor6" target="_blank"><img id="image6" /></a>
+      <a id="anchor7" target="_blank"><img id="image7" /></a>
+      <a id="anchor8" target="_blank"><img id="image8" /></a>
+      <a id="anchor9" target="_blank"><img id="image9" /></a>
+      <br />
+      <a id="anchor10" target="_blank"><img id="image10" /></a>
+      <a id="anchor11" target="_blank"><img id="image11" /></a>
+      <a id="anchor12" target="_blank"><img id="image12" /></a>
+      <a id="anchor13" target="_blank"><img id="image13" /></a>
+      <a id="anchor14" target="_blank"><img id="image14" /></a>
+      <br />
+      <a id="anchor15" target="_blank"><img id="image15" /></a>
+      <a id="anchor16" target="_blank"> <img id="image16" /></a>
+      <a id="anchor17" target="_blank"><img id="image17" /></a>
+      <a id="anchor18" target="_blank"> <img id="image18" /></a>
+      <a id="anchor19" target="_blank"><img id="image19" /></a>
+      <br />
+      <a id="anchor20" target="_blank"> <img id="image20" /></a>
+      <a id="anchor21" target="_blank"> <img id="image21" /></a>
+      <a id="anchor22" target="_blank"> <img id="image22" /></a>
+      <a id="anchor23" target="_blank"><img id="image23" /></a>
+      <a id="anchor24" target="_blank"><img id="image24" /></a>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <script src="assets/js/rover.js"></script>
+  </section>
+    
+  
+  </body>
 </html>
