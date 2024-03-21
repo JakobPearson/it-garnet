@@ -22,12 +22,12 @@ async function GetResults() {
     var apiKey = "JYaHPj9Ce6PsA2cHnlhzY0AOn6RzbdJhGf9WP72K"
     
     var myURL = 
-    "https://api.nasa.gov/mars-photos/api/v1/rovers/" +
-    rover +
-    "/photos?earth_date=" +
-    date +
-    "&page=1&api_key=" +
-    apiKey;
+      "https://api.nasa.gov/mars-photos/api/v1/rovers/" +
+      rover +
+      "/photos?earth_date=" +
+      date +
+      "&page=1&api_key=" +
+      apiKey;
 
     var myObject = await fetch(myURL);
     var myText = await myObject.text();

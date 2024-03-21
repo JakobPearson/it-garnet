@@ -18,16 +18,17 @@ async function getResults() {
       // URL for AJAX call
   
       //https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/day/2023-01-09/2023-01-09?adjusted=true&sort=asc&limit=120&apiKey=QzjI5oFzJkL19c3AeJzJIHQtH1jEBgxY
+      
       var myURL =
-        "https://api.polygon.io/v2/aggs/ticker/C:" +
-        baseCurrency +
-        toCurrency +
-        "/range/1/day/" +
-        fromDate +
-        "/" +
-        toDate +
-        "?adjusted=true&sort=asc&limit=120&apiKey=" +
-        apiKey;
+      "https://api.polygon.io/v2/aggs/ticker/C:" +
+      baseCurrency +
+      toCurrency +
+      "/range/1/day/" +
+      fromDate +
+      "/" +
+      toDate +
+      "?adjusted=true&sort=asc&limit=120&apiKey=" +
+      apiKey;
   
       var msg2Object = await fetch(myURL);
       /* Check the status */
