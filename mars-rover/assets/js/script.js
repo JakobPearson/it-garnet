@@ -19,7 +19,7 @@ async function GetResults() {
       rover = document.getElementById("Spirit").value
     }
 
-    var apiKey = "JYaHPj9Ce6PsA2cHnlhzY0AOn6RzbdJhGf9WP72K"
+    var apiKey = "DTCeGJ7iLpXUGU072Hb9rdyw1jnqguh1r0VIGOJg"
     
     var myURL = 
       "https://api.nasa.gov/mars-photos/api/v1/rovers/" +
